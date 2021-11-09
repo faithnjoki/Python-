@@ -5,14 +5,12 @@
 # print('My name is {}'.format(fname))
 # print(f'My name is {fname}')
 
+#madlib project
+language = input('language')
+adj = input('adj')
+name = input('name')
 
 
-noun1 = input('noun')
-noun2 = input('noun')
-adj = input('adjective')
-movie = input('movie')
-
-
-madlib = f'My name is faith {noun1}. my son is called Leon {noun2}!\ I love {adj} and like watching {movie}' 
+madlib = f'Welcome to {language} programming language.Everything is going to be {adj} as you learn this new language {name} .' 
 print(madlib)
 
