@@ -96,4 +96,13 @@ else:
     print('Incorrect!')
 
 
+print(f'{name}, You got {score}')
+if score < 5:
+    print(f'{name}, You got below average, kindly repeat the quiz.')
+elif score == 7 and score ==8 :
+    print(f'Average perfomance. Congrats for {name}')
+else:
+    print(f'Congratulations {name}. You did Great!')
+
+
 
