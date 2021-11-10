@@ -23,5 +23,20 @@ else:
     print("please type a number next time")
     quit()
 
-random_number = random.radint(number)
-print(random_number)
+random_number = random.randint(0,number)
+
+
+while True:
+    user_guess = input('make a guese: ')
+    if user_guess.isdigit():
+        user_guess = int(user_guess) 
+    else:
+        print('Please type a number next time.')
+        
+
+    if user_guess == random_number:
+        print('You got it!')
+        break
+    else:
+        print('You got it wrong')
+        
