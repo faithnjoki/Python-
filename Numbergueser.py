@@ -13,6 +13,9 @@ import random
 # number = random.randrange(7,12)
 # print(number)
 
+name = input('Your name: ')
+print(f'Hey, {name}, Welcome to my number gueser game.')
+
 number = input('Type a number: ')
 if number.isdigit():
     number = int(number)
@@ -24,9 +27,11 @@ else:
     quit()
 
 random_number = random.randint(0,number)
+gueses = 0
 
 
 while True:
+    gueses += 1
     user_guess = input('make a guese: ')
     if user_guess.isdigit():
         user_guess = int(user_guess) 
